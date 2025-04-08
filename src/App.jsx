@@ -1,11 +1,13 @@
-import Register from "./components/Register"
+import { ThemeProvider } from 'styled-components'
+
+import { RegisterPage } from './pages'
+import { theme } from './styles'
 
 function App() {
-
   return (
-    <>
-      <Register />
-    </>
+    <ThemeProvider theme={theme}>
+      <RegisterPage />
+    </ThemeProvider>
   )
 }
 
